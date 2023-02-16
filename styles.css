@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: beige;
+    font-size: 14px;
+}
+
+
+.product{
+    margin: 30px auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img {
+    display: flex;
+    overflow: hidden;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.alltext {
+    padding:  20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    width: 300px; /* same width as the image */
+    height: 450px; /* same height as the image */
+    background-color:hsl(0, 0%, 100%);
+    color: hsl(228, 12%, 48%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.perfume {
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin-top: 10px;
+}
+
+.gabrielle {
+    font-family: 'Fraunces', serif;
+    font-size: 36px;
+    color: hsl(212, 21%, 14%);
+    
+
+}
+
+.allprix {
+    display: flex;
+    align-items: center;
+}
+
+.prix-promo {
+    font-family: 'Fraunces', serif;
+    padding-right: 20px;
+    color:  hsl(158, 36%, 37%);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.prix-bas {
+    text-decoration: line-through;
+}
+
+.btn {
+    background-color: hsl(158, 31%, 32%);
+    padding: 14px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color .3s;
+    color: white;
+    border-radius: 10px;
+    
+}
+
+.btn:hover{
+    background-color: hsl(154, 43%, 22%);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .product {
+    flex-direction: column;
+    }
+    
+    .img {
+
+    height: 300px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    }
+    
+    .alltext {
+    height: auto;
+    border-top-left-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+    .img {
+    height: 450px;
+    }
+    
+    .alltext {
+    width: 30%;
+    height: 450px;
+    border-top-left-radius: 10px;
+    }
+}
+
+
+
